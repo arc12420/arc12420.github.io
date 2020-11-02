@@ -2578,6 +2578,16 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
 		}
+		span .icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		li .icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 
 		.icon > .label {
 			display: none;
@@ -2808,6 +2818,11 @@ input, select, textarea {
 		}
 
 /* Icons */
+
+.iconsBox{
+	display: flex;
+	flex-wrap: wrap;
+}
 
 	ul.icons {
 		cursor: default;
@@ -3293,13 +3308,26 @@ input, select, textarea {
 		display: flex;
 		justify-content: center;
 		justify-content: space-evenly;
-		filter:grayscale(100%)
+		filter:grayscale(100%);
+		flex-wrap: wrap;
 	}
 
 	.logo{
-		width: 80px;
+		width: auto;
 		height:80px;
 		min-height: unset;
+		margin-right: 30px;
+		margin-left: 30px;
+		justify-content: space-evenly;
+	}
+
+	.wLogo{
+		width: auto;
+		height:80px;
+		min-height: unset;
+		margin-right: 30px;
+		margin-left: 30px;
+		justify-content: space-evenly;
 	}
 
 	.logoTitle{
@@ -3756,6 +3784,8 @@ input, select, textarea {
 		max-width: 72rem;
 		z-index: 2;
 	}
+
+
 
 		#nav ul.divided li {
 			border-top-color: #ffffff;
